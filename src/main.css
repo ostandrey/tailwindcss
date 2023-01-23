@@ -1,3 +1,23 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap'); */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.header-link {
+    @apply dark:text-slate-200 dark:hover:text-sky-500 dark:hover:border-sky-500 transition-all duration-200 ease-in text-gray-500 font-semibold inline-block py-3 px-2 border-b-2 border-transparent hover:text-sky-800 hover:border-sky-800
+}
+
+.header-btn {
+    @apply dark:border-sky-500 dark:text-sky-500 dark:hover:bg-sky-500 dark:hover:text-white transition-all duration-200 ease-in py-1 px-3 border-2 rounded-full border-sky-700 text-sky-700 hover:text-white hover:bg-sky-700 focus:outline-none focus:ring focus:ring-sky-300
+}
+
+@layer components {
+    .pagination-item {
+        @apply dark:text-slate-400 transition-all duration-200 ease-in inline-block py-1 px-3 border border-gray-100 text-gray-500  hover:bg-gray-100 hover:text-gray-700
+    }
+}
+
+.footer-link {
+    @apply dark:text-slate-400 transition-all duration-200 ease-in inline-block text-gray-500 py-2 hover:underline decoration-gray-700 underline-offset-2
+}
